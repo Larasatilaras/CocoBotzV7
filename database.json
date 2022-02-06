@@ -5,7 +5,7 @@
       "exp": 99999999999,
       "limit": 99999999999,
       "healt": 0,
-      "level": 0,
+      "level": 999999,
       "title": "",
       "lastclaim": 0,
       "money": 0,
@@ -71,7 +71,7 @@
       "regTime": -1,
       "autolevelup": false,
       "lastIstigfar": true,
-      "role": "Warrior V"
+      "role": "Mythic I"
     },
     "62895354437300@s.whatsapp.net": {
       "healt": 0,
