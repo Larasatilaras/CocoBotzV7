@@ -188,7 +188,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let names = m.fromMe ? conn.user : conn.contacts[who]
     let pushname = `${names.vnmae || names.notify || names.names || ('+' + names.jid.split`@`[0])}`
-    let pushn = '_Daftar Dulu Ya Kak Supaya Namanya Muncul Disini :3_'
+    let pushn = '_-Daftar Dulu Ya Kak Supaya Namanya Muncul Disini :3-_'
     let name = registered ? global.db.data.users[m.sender].name : pushn
     let d = new Date(new Date + 3600000)
     let locale = 'id'
@@ -241,7 +241,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ada Yang Error Silahkan Hubungi Owner 😊`.trim(),
+Silahkan Pilih Menu Dibawah\n_Bot Ini Masih Dalam Tahap Pengembangan_\nJika Ada Yang Error Silahkan Hubungi Owner 👌`.trim(),
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -305,7 +305,7 @@ Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ad
                   "rowId": ".? grup"
                 }, {
                   "title": "[🔝] Premium",
-                  "description": "Menu Untuk Premium",
+                  "description": "Menu Untuk Premium User",
                   "rowId": ".? premium"
                 }, {
                   "title": "[🖥️] Internet",
