@@ -34,16 +34,16 @@ let handler = async (m, { conn, usedPrefix }) => {
     let math = max - xp
     let res = `http://hardianto-chan.herokuapp.com/api/rankcard?profile=https://i.ibb.co/vQTHzkh/IMG-20210907-WA0721.jpg&name=${name}&bg=https://i.ibb.co/4YBNyvP/images-76.jpg&needxp=${max}&curxp=${exp}&level=${level}&logorank=https://i.ibb.co/Wn9cvnv/FABLED.png`
     let str = `
-👤 Nama : ${registered ? '(' + name + ') ' : ''}(@${who.replace(/@.+/, '')})${about != 401 ? '\nInfo: ' + about : ''}
+👤 Nama : ${registered ? '(' + name + ') ' : ''}(@${who.replace(/@.+/, '')})${about != 401 ? '\n♊ Info: ' + about : ''}
 🔢 Nomor : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 🪀 Link : https://wa.me/${who.split`@`[0]}${registered ? '\nUmur: ' + age : ''}
-㊙ XP : TOTAL ${exp} (${exp - min} / ${xp}) [${math <= 0 ? `Siap untuk *${usedPrefix}levelup*` : `${math} XP lagi untuk levelup`}]
+㊙ XP : TOTAL ${exp} (${exp - min} / ${xp}) [${math <= 0 ? `Siap Untuk *${usedPrefix}levelup*` : `${math} XP Lagi Untuk LevelUp`}]
 🪅 Level : ${level}
 🎐 Role : *${role}*
 🧸 Limit : ${limit}
 🗿 Owner : ${global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'True' : 'False'}
 🪄 Premium : ${global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'True' : 'False'}
-📃 Registered : ${registered ? 'Ya (' + new Date(regTime).toLocaleString() + ')' : 'Tidak'}${lastclaim > 0 ? '\nTerakhir Klaim: ' + new Date(lastclaim).toLocaleString() : ''}
+📃 Registered : ${registered ? 'True (' + new Date(regTime).toLocaleString() + ')' : 'False'}${lastclaim > 0 ? '\n⏰ Terakhir Klaim : ' + new Date(lastclaim).toLocaleString() : ''}
 `.trim()
     let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'pp.jpg', banned ? 'jiakh ke banned' : str, m, false, { contextInfo: { mentionedJid } })
