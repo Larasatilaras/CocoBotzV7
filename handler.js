@@ -109,7 +109,7 @@ module.exports = {
                 if (!isNumber(user.serial)) user.serial
                 if (!isNumber(user.regTime)) user.regTime = -1
             }
-            if (!('autolevelup' in user)) user.autolevelup = false
+            if (!('autolevelup' in user)) user.autolevelup = true
             if (!('lastIstigfar' in user)) user.lastIstigfar = true
         } else global.db.data.users[m.sender] = {
             healt: 100,
@@ -199,7 +199,7 @@ module.exports = {
           if (!('sDemote' in chat)) chat.sDemote = ''
           if (!('descUpdate' in chat)) chat.descUpdate = true
           if (!('delete' in chat)) chat.delete = false
-          if (!('antiBadword' in chat)) chat.antiBadword = true
+          if (!('antiBadword' in chat)) chat.antiBadword = false
           if (!('rpg' in chat)) chat.delete = true
           if (!('nsfw' in chat)) chat.delete = false
           if (!('antiLink' in chat)) chat.antiLink = false
