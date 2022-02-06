@@ -25,10 +25,10 @@ let handler = async function (m, { text, usedPrefix }) {
 ╭───────────────────╯
 ├❏ Nama : ${name}
 ├❏ Umur : ${age} tahun
-├❏ SN: ${sn}
+├❏ SN : ${sn}
 ╰───────────────────╯
 `.trim())
-u = 'Klik Tombol Rules untuk melihat peraturan yang ada di bot ini\nSilahkan klik tombol menu untuk menggunakan Bot'
+u = 'Klik Tombol Rules Untuk Melihat Peraturan Yang Ada Di Bot Ini\nSilahkan Klik Tombol Menu Untuk Menggunakan Bot'
 await conn.send2Button(m.chat, u, footer, 'Rules Bot', '#rules', 'Tampilkan Menu', '#menu', m)
 }
 handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <nama>.<umur>')
