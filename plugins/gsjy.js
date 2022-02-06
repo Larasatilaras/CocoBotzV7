@@ -14,14 +14,14 @@ ${ucapan()} *%name* 😊
 🗓 Tanggal Masehi : *%date*
 📆 Tanggal Hijriyah : *%dateIslamic*
 
-➥ 👤 *USER INFO*
+❏ 👤 *USER INFO*
 🪀 WhatsApp Version : 2.21.24.22
 🪅 Limit : *%limit Limit*
 🏆 Role : *%role*
 🔢 Level : *%level (%exp / %maxexp)*
 🚀 Total XP : %totalexp
 
-➥ 🤖 *BOT INFO*
+❏ 🤖 *BOT INFO*
 ㊙ Mode : Public Mode
 🈂 Prefix : Multi Prefix
 💻 Platform : Linux
