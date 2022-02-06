@@ -14,22 +14,20 @@ ${ucapan()} *%name* 😊
 🗓 Tanggal Masehi : *%date*
 📆 Tanggal Hijriyah : *%dateIslamic*
 
-👤 *USER INFO*
+➥ 👤 *USER INFO*
 🪀 WhatsApp Version : 2.21.24.22
 🪅 Limit : *%limit Limit*
 🏆 Role : *%role*
 🔢 Level : *%level (%exp / %maxexp)*
 🚀 Total XP : %totalexp
 
-🤖 *BOT INFO*
+➥ 🤖 *BOT INFO*
 ㊙ Mode : Public Mode
 🈂 Prefix : Multi Prefix
 💻 Platform : Linux
 🌏 Browser : Chrome
 🌐 Server : Baileys 3.5.3
 ⏰ Uptime : *%uptime (%muptime)*
-🎁 Instagram :3 :
-• https://www.instagram.com/ryuuu.rs
 `.trimStart(),
   header: '〔 *%category* 〕',
   body: '• %cmd %islimit %isPremium',
@@ -278,8 +276,8 @@ Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ad
                   "description": "XP Dan Level",
                   "rowId": ".? xp"
                 },  {
-                  "title": "[🚫] Error",
-                  "description": "-Sedang Error-",
+                  "title": "[🚫] NSFW",
+                  "description": "Stay Hallal",
                   "rowId": ".? nsfw"
                 }, {
                   "title": "[🖼️] Random Image",
