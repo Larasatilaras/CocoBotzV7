@@ -7,10 +7,10 @@ handler.before = m => {
     let before = user.level * 1
     while (levelling.canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let str = `Selamat @${m.sender.split`@`[0]} Anda Naik level 
-*${before}* --> *${user.level}*
+        let str = `Selamat @${m.sender.split`@`[0]} Kamu Telah Naik level 😱
+*Level Sebelumnya : ${before}*\nLevel Saat Ini : *${user.level}*
 `.trim()
-        conn.send2Button(m.chat, str, footer, 'PROFILE', '#profile', 'Off Auto Levelup', '#off autolevelup', false, {
+        conn.send2Button(m.chat, str, footer, 'PROFILE', '#profile', 'Donasi', '#donasi', false, {
             contextInfo: {
                 mentionedJid: [m.sender]
             }
