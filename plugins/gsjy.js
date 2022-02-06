@@ -246,26 +246,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-🎀 Hari : *%week %weton* 
-🗓 Tanggal Masehi : *%date*
-📆 Tanggal Hijriyah : *%dateIslamic*
-
-👤 *USER INFO*
-🪀 WhatsApp Version : 2.21.24.22
-🪅 Limit : *%limit Limit*
-🏆 Role : *%role*
-🔢 Level : *%level (%exp / %maxexp)*
-🚀 Total XP : %totalexp
-
-🤖 *BOT INFO*
-㊙ Mode : Public Mode
-🈂 Prefix : Multi Prefix
-💻 Platform : Linux
-🌏 Browser : Chrome
-🌐 Server : Baileys 3.5.3
-⏰ Uptime : *%uptime (%muptime)*
-🎁 Instagram :3 :
-• https://www.instagram.com/ryuuu.rs`.trim(),
+Silahkan Pilih Menu Dibawah, Jika Ada Yang Error Silahkan Hubungi Owner 😊`.trim(),
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -490,7 +471,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, '🧒 Owner', '.owner', '💲 Donasi', '.donasi', '📍 Rules', '.infobot', m)
+    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, '👤 Owner', '.owner', '💲 Donasi', '.donasi', '🚫 Rules', '.infobot', m)
     // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
     await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
     await conn.sendFile(m.chat, bzz2, 'bzz2.opus', null, m, true)
@@ -518,18 +499,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat Pagi"
+  res = "Selamat Pagi 🌄"
   if (time >= 4) {
-    res = "Selamat Pagi"
+    res = "Selamat Pagi 🌄"
   }
   if (time > 10) {
-    res = "Selamat Siang"
+    res = "Selamat Siang 🏞"
   }
   if (time >= 15) {
-    res = "Selamat Sore"
+    res = "Selamat Sore 🌅"
   }
   if (time >= 18) {
-    res = "Selamat Malam"
+    res = "Selamat Malam 🌌"
   }
   return res
 }
