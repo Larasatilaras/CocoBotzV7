@@ -36,7 +36,7 @@ runtime = process.uptime()
                             itemCount : 999,
                             status: 1,
                             surface : 1,
-                            message: `${teks}\n${run}`, //Kasih namalu
+                            message: `Cocopie`, //Kasih namalu
                             orderTitle: `${teks}\n${run}`,
                             thumbnail: img1, //Gambarnye
                             sellerJid: '0@s.whatsapp.net' 
@@ -44,26 +44,26 @@ runtime = process.uptime()
                         }
                       }
 					//m.reply(teks)
-					let jawab = `Hai Sayangku ${pushname2} ${ucapan()}\nSaya ${namabot} ada yang bisa saya bantu?`.trim()
-conn.sendButton(m.chat, jawab, footer, 'Tampilkan Menu', '#menu', m, {quoted: ftrol})
+					let jawab = `Hai ${pushname2} ${ucapan()}\nSaya ${namabot} Ada Yang Bisa Saya Bantu? :3`.trim()
+conn.sendButton(m.chat, jawab, footer, 'Show Menu', '#menu', m, {quoted: ftrol})
 }
 handler.customPrefix = /^(P|p|Hallo|halo|Halo|hallo|hi|helo|hai|hi|Hai|Helo|Hello|oy)$/i
 handler.command = new RegExp
 module.exports = handler
 function ucapan() {
     const time = moment.tz('Asia/Jakarta').format('HH')
-    res = "Selamat dinihari"
+    res = "Selamat Pagi"
     if (time >= 4) {
-        res = "Selamat pagi"
+        res = "Selamat Pagi"
     }
     if (time > 10) {
-        res = "Selamat siang🌞"
+        res = "Selamat Siang🌞"
     }
     if (time >= 15) {
-        res = "Selamat sore🌝"
+        res = "Selamat Sore🌝"
     }
     if (time >= 18) {
-        res = "Selamat malam🌚"
+        res = "Selamat Malam🌚"
     }
     return res
 }
