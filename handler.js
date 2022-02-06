@@ -207,7 +207,7 @@ module.exports = {
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
           welcome: true,
-          detect: false,
+          detect: true,
           sWelcome: '',
           sBye: '',
           sPromote: '',
@@ -216,8 +216,8 @@ module.exports = {
           delete: false,
           rpg: true,
           nsfw: false,
-          antiBadword: true,
-          antiLink: false,
+          antiBadword: false,
+          antiLink: true,
           viewonce: true,
         }
         
@@ -520,9 +520,9 @@ module.exports = {
         }
         break
       case 'promote':
-        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Is Now As Admin```')
       case 'demote':
-        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Is No Longer As Admin```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         if (chat.detect) this.sendMessage(jid, text, MessageType.extendedText, {
           contextInfo: {
@@ -569,16 +569,16 @@ Untuk mematikan fitur ini, ketik
 global.dfail = (type, m, conn) => {
 	let name = conn.getName(m.sender)
   let msg = {
-    rowner: `❌Perintah ditolak❌\n\nSilahkan hubungi @${global.kontak[0].split`@`[0]}`,
-    owner: `❌⚠️Perintah ditolak⚠️❌\n\nSilahkan hubungi @${global.kontak[0].split`@`[0]}`,
+    rowner: `❌Command Rejected❌\n\nSilahkan Hubungi @${global.kontak[0].split`@`[0]}`,
+    owner: `❌⚠️Command Rejected⚠️❌\n\nSilahkan Hubungi @${global.kontak[0].split`@`[0]}`,
     mods: `❌Perintah ditolak❌\n\nSilahkan hubungi @${global.kontak[0].split`@`[0]}`,
-    premium: '❌Perintah Ini khusus pengguna _*Premium*_ !',
+    premium: '❌Perintah Ini Khusus User _*Premium*_ !',
     group: 'Perintah ini hanya dapat digunakan di grup!',
-    private: '❌Perintah ditolak❌\n\nGunakan Perintah ini di Chat Pribadi bot',
-    admin: 'Perintah ini hanya untuk *Admin* grup!',
-    nsfw: `Perintah ini hanya bisa diaktifkan oleh @${global.kontak[0].split`@`[0]}`,
-    botAdmin: 'Jadikan Bot sebagai admin untuk menggunakan perintah ini\n\nDenger ya dekkk!!!\nApakah orang yang tidak menjadi admin bisa menambahkan member???!!!!!',
-    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar nama.16*`
+    private: '❌Command Rejected❌\n\nGunakan Perintah Ini Di Chat Pribadi Bot',
+    admin: 'Perintah Ini Hanya Untuk *Admin* Grup!',
+    nsfw: `Perintah Ini Hanya Bisa Diaktifkan Oleh @${global.kontak[0].split`@`[0]}`,
+    botAdmin: 'Jadikan Bot Sebagai Admin Untuk Menggunakan Perintah Ini',
+    unreg: `Silahkan Daftar Untuk Menggunakan Fitur Ini Dengan Cara Mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Cocopie.14*`
   }[type]
   if (msg) return m.reply(msg)
 }
