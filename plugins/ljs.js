@@ -47,7 +47,7 @@ runtime = process.uptime()
 					let jawab = `Hai ${pushname2} ${ucapan()}\nSaya ${namabot} Ada Yang Bisa Saya Bantu? :3`.trim()
 conn.sendButton(m.chat, jawab, footer, 'Show Menu', '#menu', m, {quoted: ftrol})
 }
-handler.customPrefix = /^(P|p|Hallo|halo|Halo|hallo|hi|helo|hai|hi|Hai|Helo|Hello|oy)$/i
+handler.customPrefix = /^(P|p|tes|test|Tes|TestHallo|halo|Halo|hallo|hi|helo|hai|hi|Hai|Helo|Hello|oy)$/i
 handler.command = new RegExp
 module.exports = handler
 function ucapan() {
