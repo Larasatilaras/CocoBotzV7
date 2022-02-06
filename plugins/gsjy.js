@@ -96,8 +96,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'edukasi': 'Edukasi'
   }
   if (teks == 'nsfw') tags = {
-    'hentai': 'Hentai',
-    'bokep': 'Bokep'
+    'hentai': 'Astaghfirullah😡',
   }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
@@ -244,7 +243,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-Silahkan Pilih Menu Dibawah\n*Bot Ini Masih Dalam Tahap Pengembangan*\nJika Ada Yang Error Silahkan Hubungi Owner 😊`.trim(),
+Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ada Yang Error Silahkan Hubungi Owner 😊`.trim(),
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
