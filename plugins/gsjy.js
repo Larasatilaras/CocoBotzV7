@@ -188,7 +188,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let names = m.fromMe ? conn.user : conn.contacts[who]
     let pushname = `${names.vnmae || names.notify || names.names || ('+' + names.jid.split`@`[0])}`
-    let pushn = 'Daftar Dulu ya kak supaya namanya muncul disini'
+    let pushn = '_Daftar Dulu Ya Kak Supaya Namanya Muncul Disini :3_'
     let name = registered ? global.db.data.users[m.sender].name : pushn
     let d = new Date(new Date + 3600000)
     let locale = 'id'
@@ -277,7 +277,7 @@ Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ad
                   "rowId": ".? xp"
                 },  {
                   "title": "[🚫] NSFW",
-                  "description": "Stay Hallal",
+                  "description": "Stay Halal",
                   "rowId": ".? nsfw"
                 }, {
                   "title": "[🖼️] Random Image",
