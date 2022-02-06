@@ -8,32 +8,35 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┏━━━ꕥ〔 *${namabot}* 〕ꕥ━⬣
-┃✾ Hai, %name!
-┃
-┃✾ Tersisa *%limit Limit*
-┃✾ Role *%role*
-┃✾ Level *%level (%exp / %maxexp)* 
-┃✾ [%xp4levelup]
-┃✾ %totalexp XP secara Total
-┗━ꕥ
-┏━ꕥ 
-┃✾ Hari : *%week %weton* 
-┃✾ Tanggal : *%date*
-┃✾ Tanggal Islam : *%dateIslamic*
-┗━ꕥ
-┏━ꕥ
-┃✾ Uptime: *%uptime (%muptime)*
-┃✾ Database: %rtotalreg dari %totalreg
-┃✾ Youtube:
-┃✾ https://www.youtube.com/channel/UCVSEzfCh6VYL3g9ixHnSqXQ
-┗━━━━━━ꕥ`.trimStart(),
-  header: '┏━━ꕥ〔 *%category* 〕ꕥ━⬣',
-  body: '┃✾%cmd %islimit %isPremium',
-  footer: '┗━ꕥ\n',
+${ucapan()} *%name* 😊
+
+🎀 Hari : *%week %weton* 
+🗓 Tanggal Masehi : *%date*
+📆 Tanggal Hijriyah : *%dateIslamic*
+
+👤 *USER INFO*
+🪀 WhatsApp Version : 2.21.24.22
+🪅 Limit : *%limit Limit*
+🏆 Role : *%role*
+🔢 Level : *%level (%exp / %maxexp)*
+🚀 Total XP : %totalexp
+
+🤖 *BOT INFO*
+㊙ Mode : Public Mode
+🈂 Prefix : Multi Prefix
+💻 Platform : Linux
+🌏 Browser : Chrome
+🌐 Server : Baileys 3.5.3
+⏰ Uptime : *%uptime (%muptime)*
+🎁 Instagram :3 :
+• https://www.instagram.com/ryuuu.rs
+`.trimStart(),
+  header: '〔 *%category* 〕',
+  body: '• %cmd %islimit %isPremium',
+  footer: '\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+*CocoBotz V7*
+*Created By Cocopie & Nurutomo*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -243,22 +246,26 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-┏━━ꕥ〔 *Status* 〕ꕥ━⬣
-┃✾ Aktif selama ${uptime}
-┃✾ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-┃✾ *${Object.keys(global.db.data.users).length}* Pengguna
-┃✾ *${totaljadibot.length}* Jadibot
-┃✾ *${conn.blocklist.length}* Terblock
-┃✾ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-┃✾ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-┗━ꕥ
-┏━ꕥ
-┃✾ Script by King Of Bear
-┃✾ Github Name : https://www.youtube.com/channel/UCVSEzfCh6VYL3g9ixHnSqXQ
-┃✾ Yt : https://www.youtube.com/channel/UCVSEzfCh6VYL3g9ixHnSqXQ
-┃✾ Run bot : Heroku
-┃✾ Tipe SC King Of Bear
-┗━━━━━━━━⬣`.trim(),
+🎀 Hari : *%week %weton* 
+🗓 Tanggal Masehi : *%date*
+📆 Tanggal Hijriyah : *%dateIslamic*
+
+👤 *USER INFO*
+🪀 WhatsApp Version : 2.21.24.22
+🪅 Limit : *%limit Limit*
+🏆 Role : *%role*
+🔢 Level : *%level (%exp / %maxexp)*
+🚀 Total XP : %totalexp
+
+🤖 *BOT INFO*
+㊙ Mode : Public Mode
+🈂 Prefix : Multi Prefix
+💻 Platform : Linux
+🌏 Browser : Chrome
+🌐 Server : Baileys 3.5.3
+⏰ Uptime : *%uptime (%muptime)*
+🎁 Instagram :3 :
+• https://www.instagram.com/ryuuu.rs`.trim(),
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -293,8 +300,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "XP Dan Level",
                   "rowId": ".? xp"
                 },  {
-                  "title": "[🔞] NSFW",
-                  "description": "Menu Bokep",
+                  "title": "[🚫] Error",
+                  "description": "-Sedang Error-",
                   "rowId": ".? nsfw"
                 }, {
                   "title": "[🖼️] Random Image",
@@ -306,7 +313,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? stiker"
                 }, {
                   "title": "[🐚] Kerang Ajaib",
-                  "description": "Menurut Kerang ajaib....",
+                  "description": "Menurut Kerang Ajaib....",
                   "rowId": ".? kerangajaib"
                 }, {
                   "title": "[📑] Quotes",
@@ -483,7 +490,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, '🧒 Pemilik Bot', '.owner', '💲 Donasi', '.donasi', '📍 Rules', '.infobot', m)
+    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, '🧒 Owner', '.owner', '💲 Donasi', '.donasi', '📍 Rules', '.infobot', m)
     // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
     await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
     await conn.sendFile(m.chat, bzz2, 'bzz2.opus', null, m, true)
@@ -511,18 +518,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari"
+  res = "Selamat Pagi"
   if (time >= 4) {
-    res = "Selamat pagi"
+    res = "Selamat Pagi"
   }
   if (time > 10) {
-    res = "Selamat siang"
+    res = "Selamat Siang"
   }
   if (time >= 15) {
-    res = "Selamat sore"
+    res = "Selamat Sore"
   }
   if (time >= 18) {
-    res = "Selamat malam"
+    res = "Selamat Malam"
   }
   return res
 }
