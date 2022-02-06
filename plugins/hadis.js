@@ -36,7 +36,7 @@ ${id}`)
         throw `Tidak ditemukan!`
     }
 }
-handler.help = ['hadis']
+handler.help = ['hadist']
 handler.tags = ['quran']
 handler.command = /^(hadist?)$/i
 module.exports = handler
