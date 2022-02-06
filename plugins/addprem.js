@@ -5,10 +5,10 @@ let handler = async (m, { conn, text }) => {
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
     else who = text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.chat
-    if (json.includes(who.split`@`[0])) throw `@${who.split`@`[0]} sudah premium!`
+    if (json.includes(who.split`@`[0])) throw `@${who.split`@`[0]} Has Been Added Before`
     json.push(`${who.split`@`[0]}`)
     fs.writeFileSync('./src/premium.json', JSON.stringify(json))
-    m.reply(`@${who.split`@`[0]} sekarang premium!`)
+    m.reply(`@${who.split`@`[0]} Now As A Premium User!`)
 //@${m.who.split`@`[0]} ////@${who.split`@`[0]}
     delete require.cache[require.resolve('../config')]
     require('../config')
