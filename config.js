@@ -3,6 +3,7 @@
 // thank you to Nurutomo as wabot-aq
 // thank you to ariffb as stikerinbot
 // thank you to botstylee
+// thank you to Cocopie
 // thank you to bochilgaming as games-wabot
 // thank you to benni ismael
 // thank you to zerochanBot
@@ -15,11 +16,11 @@
 gc1 = ''
 gc2 = ''
 gc3 = ''
-global.linkGC = ['https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL', ''] // ganti jadi group lu
-global.owner = ['6288279268363'] // Put your number here //owner eval
-global.kontak = ['6288279268363','0'] //Ketika ada yang ngetik #owner
-global.mods = ['6288279268363'] // Want some help?
-global.prems = ['6288279268363'] // Premium user has unlimited limit
+global.linkGC = ['https://chat.whatsapp.com/HJzf8CNphXrEtJaTpNY692', ''] // ganti jadi group lu
+global.owner = ['628992029499'] // Put your number here //owner eval
+global.kontak = ['628992029499','0'] //Ketika ada yang ngetik #owner
+global.mods = ['628992029499'] // Want some help?
+global.prems = ['628992029499'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com', 
@@ -54,30 +55,30 @@ leyskey = 'dappakntlll'
 bearkey = 'buy'
 
 //xteam        MIMINETBOT
-namaig = 'https://instagram.com/drak_ipul123'
-namagithub = 'GAK ADA :)'
-kasihcaption = `Nih kak`
-namakontak1 = 'King Of Bear'
-namakontak2 = 'King Of Bear'
+namaig = 'https://instagram.com/ryuuu.rs'
+namagithub = 'https://github.com/iCocopie'
+kasihcaption = `Ini Kak :)`
+namakontak1 = 'Cocopie'
+namakontak2 = 'Cocopie'
 
 //kasihcaption = `Nih Kak`
 
 // Sticker WM
-global.packname = 'By King Of Bear' // ganti aja
-global.author = 'King Of Bear' // ganti aja
+global.packname = 'CocoBotz Created By' // ganti aja
+global.author = 'Cocopie' // ganti aja
 
 //yyy
-bc = 'King Of Bear' //King Of Bear Broadcast
-footer = '\n©King Of Bear'
-namabot = 'YUKI BOT'
-namalu = 'King Of Bear'
+bc = 'CocoBotz Broadcast' //King Of Bear Broadcast
+footer = '\n©Cocopie || 2022'
+namabot = 'CocoBotz'
+namalu = 'Cocopie'
 
 
 // 
-wait = '_*Tunggu Sebentar...*_'
-global.wait = '_*Tunggu Sebentar...*_'
-global.rpg = 'Fitur Rpg Dimatikan\nKetik *!enable* *rpg* untuk menggunakan fitur ini!\nKalo Mau main Disini aja\nhttps://chat.whatsapp.com/FnNAbem8o6r4pgLhSdO8Q9'
-global.nsfw = 'Fitur NSFW Dimatikan\nKetik *!enable* *nsfw* untuk menggunakan fitur ini!\n“Katakanlah kepada orang laki-laki yang beriman: Hendaklah mereka menahan pandanganya, dan memelihara kemaluannya; … Katakanlah kepada wanita yang beriman: Hendaklah mereka menahan pandangannya, dan kemaluannya, dan janganlah mereka Menampakkan perhiasannya, kecuali yang (biasa) nampak dari padany,” \n(TQS. Al-Nur [24]: 30-31).'
+wait = '_*...*_'
+global.wait = '_*Chottomatte...*_'
+global.rpg = 'Fitur Rpg Dimatikan\nKetik *.enable* *rpg* Untuk Menggunakan Fitur Ini!'
+global.nsfw = '“Katakanlah kepada orang laki-laki yang beriman: Hendaklah mereka menahan pandanganya, dan memelihara kemaluannya; … Katakanlah kepada wanita yang beriman: Hendaklah mereka menahan pandangannya, dan kemaluannya, dan janganlah mereka Menampakkan perhiasannya, kecuali yang (biasa) nampak dari padany,” \n(TQS. Al-Nur [24]: 30-31).'
 global.eror = '_*Server Error*_'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
