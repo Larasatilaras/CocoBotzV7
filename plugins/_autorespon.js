@@ -15,7 +15,7 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? `${namabot} tidak aktif` : banned ? 'kamu dibanned' : `${namabot} disini, ada yang bisa saya bantu?`,
+                isBanned ? `${namabot} tidak aktif` : banned ? 'kamu dibanned' : `${namabot} Disini, Ada Yang Bisa Saya Bantu? :3`,
                 footer,
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
@@ -32,31 +32,23 @@ handler.all = async function (m, { isBlocked }) {
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let math = max - xp
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup && !m.fromMe && !m.isOwner) {
-        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `┏━━━ꕥ〔 *${namabot}* 〕ꕥ━⬣
-┃✾ Hai, ${name}!
-┃
-┃✾ Tersisa *${limit} Limit*
-┃✾ Role *${role}*
-┃✾ Level *${level} (${exp - min} / ${xp})* 
-┃✾ [${math} XP lagi untuk levelup]
-┃✾ ${exp} XP secara Total
-┗━ꕥ
-┏━━━ꕥ〔 *BELI/SEWA BOT* 〕ꕥ━⬣
-┃✾ *1 Bulan :* Rp 15000
-┃✾ *Permanen :* Rp 30000
-┃✾ *Premium :* Rp 15000
-┃✾ *Sc Bot :* https://youtu.be/gk7euEW1vis 
-┗━ꕥ
-┏━━━ꕥ〔 *PEMBAYARAN* 〕ꕥ━⬣
-┃✾ *Dana :* 0882-7926-8363
-┃✾ *Gopay :* Masih Lewat Qr
-┃✾ *Ovo :* Masih Lewat Qr
-┃✾ *Pulsa :* Masih Belum Bisa 
-┗━ꕥ`.trim(), footer, 'Dana', '#viadana', 'Owner', '#owner', m)
+        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `〔 *${namabot}* 〕
+〔 *BELI/SEWA BOT* 〕
+*1 Bulan :* Rp 15000
+*Permanen :* Rp 30000
+*Premium :* Rp 15000
+_*BOT ONLINE 24 JAM KARENA MENGGUNAKAN HEROKU, JIKA OFF BERARTI WA KE CLOSE*_
+
+〔 *PEMBAYARAN* 〕
+*Dana :* 0899-2029-499
+*Gopay :* 0899-2029-499
+*Ovo :* -
+*Pulsa :* 0895-3544-37300
+`.trim(), footer, 'Donasi', '#donasi', 'Owner', '#owner', m)
 }
     // salam
     let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
-    let regg = /(Tes)/i
+    let regg = /(Ishyzgsisigvxi)/i
 
     let isSalam = reg.exec(m.text)
     let isTes = regg.exec(m.text)
