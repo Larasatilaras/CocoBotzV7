@@ -12,44 +12,27 @@ let handler  = async (m, { conn, usedPrefix }) => {
   conn.reply(m.chat, `
 ═〘 Rules ${namabot} 〙═
 
-⬡ Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam
+⬡ Mohon Untuk Tidak Spam Bot Karena Bot Ini Sudah Memiliki Otomatis Blokir Bagi Pengguna Bot Yang Spam
 
-⬡ Mohon maaf jika ad yg memakai menu Nsfw maka akan di block oleh bot, jika di gc tolong admin untuk menghubungi kami!!
+⬡ Mohon Maaf Jika Ada Yang Memakai Menu Nsfw Maka Akan Di Block Oleh Bot, Jika Di GC, Tolong Admin Untuk Menghubungi Kami!!
 
-⬡ Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot
+⬡ Mohon Untuk Tidak Menelpon Bot Karena Bot Ini Sudah Memiliki Otomatis Blokir Bagi Orang Yang Menelpon Bot
 
-⬡ Kami tidak bertanggung jawab atas penyalahgunaan bot
-
-⬡ Kami tidak bertanggung jawab atas kebocoran data pribadi anda
+⬡ Kami Tidak Bertanggung Jawab Atas Kebocoran Data Pribadi Anda
 
 
 ➥ ${namabot} Versi ${package.version}
-➥ *Yt:* https://www.youtube.com/channel/UCVSEzfCh6VYL3g9ixHnSqXQ
 ➥ *Ping:* ${neww - old} *ms*
-➥ *Total user:* ${totalreg} *user*
+➥ *Total User:* ${totalreg} *User*
 ➥ *Uptime:* ${uptime}
 
 ═ 〘 DONASI 〙 ═
-➥ Saweria : https://saweria.co/raraharsita2
-➥ Dana: [0882-7926-8363]
+➥ Saweria : https://saweria.co/cocopie
+➥ Dana: [0899-2029-499]
 
 
-➥ Request? https://www.youtube.com/channel/UCVSEzfCh6VYL3g9ixHnSqXQ
-
-Official Grup :
-
-Grup 1 :
-https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL
-
-Grup 2 :
-https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL
-
-Grup 3 :
-https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL
-
-
- ©BaseNew ${namabot}
- Script original by King Of Bear
+ ©Cocopie
+ Script Original By Cocopie & Nurutomo
  
  
 ═〘 ${namabot} 〙 ═
