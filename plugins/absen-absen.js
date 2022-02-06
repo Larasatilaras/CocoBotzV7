@@ -5,7 +5,7 @@ let handler = async (m, { usedPrefix }) => {
 
     let absen = conn.absen[id][1]
     const wasVote = absen.includes(m.sender)
-    if (wasVote) throw '*Kamu sudah absen!*'
+    if (wasVote) throw '*Kamu Sudah Absen -_*'
     absen.push(m.sender)
     m.reply(`Done!`)
     let d = new Date
@@ -17,10 +17,10 @@ let handler = async (m, { usedPrefix }) => {
     let list = absen.map((v, i) => `│ ${i + 1}. @${v.split`@`[0]}`).join('\n')
     conn.reply(m.chat, `*「 ABSEN 」*
 
-Tanggal: ${date}
+Tanggal : ${date}
 ${conn.absen[id][2]}
 
-┌ *Yang sudah absen:*
+┌ *List :*
 │ 
 │ Total: ${absen.length}
 ${list}
