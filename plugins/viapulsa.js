@@ -1,30 +1,5 @@
 let handler = async (m, { conn }) => {
-	conn.reply(m.chat, `╠═〘 PEMBAYARAN 〙 ═
-╠═ Untuk Pembayaran Via Pulsa
-╠➥ SAYANG SEKALI HANYA TERSEDIA
-║➥ VIA DANA, GOPAY, OVO, SAWERIA
-║
-╠═〘 Fitur 〙 ═
-║
-╠➥ *FITUR DOWNLOADER 500++
-║     YouTube, Twitter, 
-║     Tiktok, Instagram, dll.
-║    *FITUR STIKER*
-╠➥ *FITUR ADMIN*
-║    *KICK ORANG*
-║    *JADIIN ADMIN*
-╠➥ *FITUR ISLAM*
-║   *QURAN*
-║   *CEK JADWAL SHALAT*
-╠➥ *INTERNET*
-║   *BRAINLY*
-║   *GOOGLE*
-╠➥ *DAN 200 LEBIH*
-║   *FITUR LAINNYA*
-║ 
-╠═ ©2022 King Of Bear
-╠═ Scrip original by Nurutomo
-╠═〘 ${namabot} 〙 ═`.trim(), m)
+	conn.reply(m.chat, `╠═〘 0895-3544-37300 〙 ═`.trim(), m)
 }
 
 handler.command = /^viapulsa$/i
