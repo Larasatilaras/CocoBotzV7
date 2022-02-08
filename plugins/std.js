@@ -15,7 +15,7 @@ let handler = async (m, { conn }) => {
 ║
 ╠═ © Cocopie || 2025
 ╠═ Script Original By Cocopie & Nurutomo
-╠═〘 ${namabot} 〙 ═`.trim(), footer, 'Dana', '#viadana', 'Pulsa', '#viapulsa', m)
+╠═〘 ${namabot} 〙 ═`.trim(), footer, 'Dana', '#viagopay', 'Pulsa', '#viapulsa', m)
 }
 
 handler.command = /^sewa(bot)?$/i
