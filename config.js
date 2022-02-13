@@ -19,7 +19,7 @@ gc3 = ''
 global.linkGC = ['https://chat.whatsapp.com/HJzf8CNphXrEtJaTpNY692', ''] // ganti jadi group lu
 global.owner = ['628992029499'] // Put your number here //owner eval
 global.kontak = ['628992029499','0'] //Ketika ada yang ngetik #owner
-global.mods = ['628992029499'] // Want some help?
+global.mods = ['6283116629498'] // Want some help?
 global.prems = ['628992029499'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -76,7 +76,7 @@ namalu = 'Cocopie'
 
 // 
 wait = '_*...*_'
-global.wait = '_*Chottomatte...*_'
+global.wait = '_*Chottomatte :)...*_'
 global.rpg = 'Fitur Rpg Dimatikan\nKetik *.enable* *rpg* Untuk Menggunakan Fitur Ini!'
 global.nsfw = '“Katakanlah kepada orang laki-laki yang beriman: Hendaklah mereka menahan pandanganya, dan memelihara kemaluannya; … Katakanlah kepada wanita yang beriman: Hendaklah mereka menahan pandangannya, dan kemaluannya, dan janganlah mereka Menampakkan perhiasannya, kecuali yang (biasa) nampak dari padany,” \n(TQS. Al-Nur [24]: 30-31).'
 global.eror = '_*Server Error*_'
