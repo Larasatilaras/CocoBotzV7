@@ -26,7 +26,7 @@ module.exports = {
         let user = global.db.data.users[m.sender]
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
         if (user) {
-            if (!isNumber(user.healt)) user.healt = 0
+            if (!isNumber(user.healt)) user.healt = 1000
             if (!isNumber(user.level)) user.level = 0
             if (!isNumber(user.exp)) user.exp = 0
             if (!isNumber(user.title)) user.title = ''
@@ -112,7 +112,7 @@ module.exports = {
             if (!('autolevelup' in user)) user.autolevelup = true
             if (!('lastIstigfar' in user)) user.lastIstigfar = true
         } else global.db.data.users[m.sender] = {
-            healt: 100,
+            healt: 1000,
             level: 0,
             title: '',
             exp: 0,
