@@ -236,7 +236,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, %name`.trim(),
+          "title": `${ucapan()}, ${name}`.trim(),
           "description": `
 Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ada Yang Error Silahkan Hubungi Owner 👌`.trim(),
           "buttonText": "📚 List Menu",
