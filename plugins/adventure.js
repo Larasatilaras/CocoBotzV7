@@ -37,10 +37,10 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             let shy = JSON.parse(fs.readFileSync(`./src/Adventure/dungeon.json`))
             let json = shy[Math.floor(Math.random() * shy.length)]
             let str = `
-Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${json.tempat} dan mendapatkan
-*exp:* ${exp} 
-*uang:* ${uang}
-*sampah:* ${sampah}${potion == 0 ? '' : '\n*Potion:* ' + potion + ''}${diamond == 0 ? '' : '\n*diamond:* ' + diamond + ''}${common == 0 ? '' : '\n*common crate:* ' + common + ''}${uncommon == 0 ? '' : '\n*uncommon crate:* ' + uncommon + ''}
+Health Kamu Berkurang -${healt * 1} Karena Kamu Telah Berpetualang Sampai ${json.tempat} Dan Mendapatkan
+*EXP :* ${exp} 
+*Money :* ${uang}
+*Sampah :* ${sampah}${potion == 0 ? '' : '\n*Potion :* ' + potion + ''}${diamond == 0 ? '' : '\n*Diamond :* ' + diamond + ''}${common == 0 ? '' : '\n*Common Crate :* ' + common + ''}${uncommon == 0 ? '' : '\n*Uncommon Crate :* ' + uncommon + ''}
 `.trim()
             let img = await (await fetch(json.image)).buffer()
             global.db.data.users[m.sender].healt -= healt * 1
