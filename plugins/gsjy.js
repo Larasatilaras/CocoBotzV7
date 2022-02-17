@@ -11,30 +11,31 @@ const defaultMenu = {
 ${ucapan()} *%name* 😊
 
 🎀 Hari : *%week %weton* 
-🗓 Tanggal Masehi : *%date*
+🗓️ Tanggal Masehi : *%date*
 📆 Tanggal Hijriyah : *%dateIslamic*
+⏲ Jam *%time Wib*
 
 ❏ 👤 *USER INFO*
 🪀 WhatsApp Version : 2.21.24.22
-🪅 Limit : *%limit Limit*
-🏆 Role : *%role*
-🔢 Level : *%level (%exp / %maxexp)*
+🎁 Limit : *%limit*
+🏷 Role : *%role*
+🗞 Level : *%level* 
 🚀 Total XP : %totalexp
 
-❏ 🤖 *BOT INFO*
-㊙ Mode : Public Mode
-🈂 Prefix : Multi Prefix
+❏ 🤖️ *BOT INFO*
+🪄 Mode : Multi Mode
+🧭 Prefix : Multi Prefix
 💻 Platform : Linux
 🌏 Browser : Chrome
-🌐 Server : Baileys 3.5.3
-⏰ Uptime : *%uptime (%muptime)*
+🌐 Server : Baileys
+⏰ Uptime: *%uptime (%muptime)*
+📥 Database: *%rtotalreg* Of *%totalreg*
 `.trimStart(),
   header: '〔 *%category* 〕',
   body: '• %cmd %islimit %isPremium',
   footer: '\n',
   after: `
-*CocoBotz V7*
-*Created By Cocopie & Nurutomo*
+*CocoBotz V8*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -92,9 +93,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'edukasi') tags = {
     'edukasi': 'Edukasi'
-  }
-  if (teks == 'nsfw') tags = {
-    'hentai': 'Astaghfirullah😡',
   }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
@@ -275,10 +273,6 @@ Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ad
                   "title": "[📈] XP",
                   "description": "XP Dan Level",
                   "rowId": ".? xp"
-                },  {
-                  "title": "[🚫] NSFW",
-                  "description": "Stay Halal",
-                  "rowId": ".? nsfw"
                 }, {
                   "title": "[🖼️] Random Image",
                   "description": "Menu Foto Random",
