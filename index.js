@@ -4,12 +4,12 @@ let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts  = require('cfonts')
-CFonts.say('Rpg\nCocopie', {
+CFonts.say('Cocopie Botz', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`'CocoBotz' By Cocopie`, {
+CFonts.say(`CocoBotz Created By Cocopie`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
