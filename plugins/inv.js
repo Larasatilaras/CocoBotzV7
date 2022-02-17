@@ -55,37 +55,36 @@ let handler = async (m, { conn, usedPrefix }) => {
     let str = `
 Inventory *${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])}*
 
-🏷️Title: *${title ? '' : 'Tidak ada'}*\n
-❤️Health: *${healt}*
-💳Role: *${role}*
-🥋Armor: *${armor == 0 ? 'Tidak Punya' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}*\n
-⛏️Pickaxe: *${pickaxe == 0 ? 'Tidak Punya' : '' || pickaxe == 1 ? 'Stone Pickaxe' : '' || pickaxe == 2 ? 'Golden Pickaxe' : '' || pickaxe == 3 ? 'Iron Pickaxe' : '' || armor == 4 ? 'Diamond Pickaxe' : '' || armor == 5 ? 'Netherite Pickaxe' : ''}*
-⛏️Durability: *${pdurability}*
-🎣Fishing Rod: *${fishingrod == 0 ? 'Tidak Punya' : '' || fishingrod == 1 ? 'Pancingan Bambu' : '' || fishingrod == 2 ? 'Pancingan Biasa' : '' || fishingrod == 3 ? 'Pancingan Besi' : '' || fishingrod == 4 ? 'Pancingan Emas' : '' || fishingrod == 5 ? 'Jaring Ikan' : ''}*
-🎣Durability: *${fdurability}*\n
-💰Money: *${money}*
-🪙Limit: *${limit}*
-🧬Level: *${level}*
-📈Exp: *${exp}*\n
-*Inventory*
-💎Diamond: *${diamond}*
-🪨Batu: *${batu}*
-⛓️Iron: *${iron}*
-🧃Potion: *${potion}*
-🗑️Sampah: *${sampah}*
-🍖Makanan Pet: *${makananpet}*
-Total inv: *${diamond + potion + sampah + makananpet}* item\n
+🏷️Title : *${title ? '' : 'Tidak Ada'}*\n
+❤️Health : *${healt}*
+💳Role : *${role}*
+🥋Armor : *${armor == 0 ? 'Tidak Punya' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}*\n
+⛏️Pickaxe : *${pickaxe == 0 ? 'Tidak Punya' : '' || pickaxe == 1 ? 'Stone Pickaxe' : '' || pickaxe == 2 ? 'Golden Pickaxe' : '' || pickaxe == 3 ? 'Iron Pickaxe' : '' || armor == 4 ? 'Diamond Pickaxe' : '' || armor == 5 ? 'Netherite Pickaxe' : ''}*
+⛏️Durability : *${pdurability}*
+🎣Fishing Rod : *${fishingrod == 0 ? 'Tidak Punya' : '' || fishingrod == 1 ? 'Pancingan Bambu' : '' || fishingrod == 2 ? 'Pancingan Biasa' : '' || fishingrod == 3 ? 'Pancingan Besi' : '' || fishingrod == 4 ? 'Pancingan Emas' : '' || fishingrod == 5 ? 'Jaring Ikan' : ''}*
+🎣Durability : *${fdurability}*\n
+💰Money : *${money}*
+🪙Limit : *${limit}*
+🧬Level : *${level}*
+📈Exp : *${exp}*
+💎Diamond : *${diamond}*
+🪨Batu : *${batu}*
+⛓️Iron : *${iron}*
+🧃Potion : *${potion}*
+🗑️Sampah : *${sampah}*
+🍖Makanan Pet : *${makananpet}*
+Total Inv : *${diamond + potion + sampah + makananpet}* item\n\n
 *Crate*
-📦Common: *${common}*
-📦Uncommon: *${uncommon}*
-📦Mythic: *${mythic}*
-🎁Legendary: *${legendary}*
-🎁Pet: *${pet}*\n
+📦Common : *${common}*
+📦Uncommon : *${uncommon}*
+📦Mythic : *${mythic}*
+🎁Legendary : *${legendary}*
+🎁Pet : *${pet}*\n\n
 *Pet*
-🐈Kucing: *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || kucing == 2 ? 'Level 2' : '' || kucing == 3 ? 'Level 3' : '' || kucing == 4 ? 'Level 4' : '' || kucing == 5 ? 'Level 5' : '' || kucing == 6 ? 'Level 6' : '' || kucing == 7 ? 'Level 7' : '' || kucing == 8 ? 'Level 8' : '' || kucing == 9 ? 'Level 9' : '' || kucing == 10 ? 'Level 10' : '' || kucing == 11 ? 'Level 11' : '' || kucing == 12 ? 'Level 12' : '' || kucing == 13 ? 'Level 13' : '' || kucing == 14 ? 'Level 14' : '' || kucing == 15 ? 'Level 15' : '' || kucing == 16 ? 'Level 16' : '' || kucing == 17 ? 'Level 17' : '' || kucing == 18 ? 'Level 18' : '' || kucing == 19 ? 'Level 19' : '' || kucing == 20 ? 'Level 20 MAX' : ''}*
-🦊Rubah: *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level 5' : '' || rubah == 6 ? 'Level 6' : '' || rubah == 7 ? 'Level 7' : '' || rubah == 8 ? 'Level 8' : '' || rubah == 9 ? 'Level 9' : '' || rubah == 10 ? 'Level 10' : '' || rubah == 11 ? 'Level 11' : '' || rubah == 12 ? 'Level 12' : '' || rubah == 13 ? 'Level 13' : '' || rubah == 14 ? 'Level 14' : '' || rubah == 15 ? 'Level 15' : '' || rubah == 16 ? 'Level 16' : '' || rubah == 17 ? 'Level 17' : '' || rubah == 18 ? 'Level 18' : '' || rubah == 19 ? 'Level 19' : '' || rubah == 20 ? 'Level 20 MAX' : ''}*
-🐎Kuda: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level 5' : '' || kuda == 6 ? 'Level 6' : '' || kuda == 7 ? 'Level 7' : '' || kuda == 8 ? 'Level 8' : '' || kuda == 9 ? 'Level 9' : '' || kuda == 10 ? 'Level 10' : '' || kuda == 11 ? 'Level 11' : '' || kuda == 12 ? 'Level 12' : '' || kuda == 13 ? 'Level 13' : '' || kuda == 14 ? 'Level 14' : '' || kuda == 15 ? 'Level 15' : '' || kuda == 16 ? 'Level 16' : '' || kuda == 17 ? 'Level 17' : '' || kuda == 18 ? 'Level 18' : '' || kuda == 19 ? 'Level 19' : '' || kuda == 20 ? 'Level 20 MAX' : ''}*\n\n
-*Progres*\n
+🐈Kucing : *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || kucing == 2 ? 'Level 2' : '' || kucing == 3 ? 'Level 3' : '' || kucing == 4 ? 'Level 4' : '' || kucing == 5 ? 'Level 5' : '' || kucing == 6 ? 'Level 6' : '' || kucing == 7 ? 'Level 7' : '' || kucing == 8 ? 'Level 8' : '' || kucing == 9 ? 'Level 9' : '' || kucing == 10 ? 'Level 10' : '' || kucing == 11 ? 'Level 11' : '' || kucing == 12 ? 'Level 12' : '' || kucing == 13 ? 'Level 13' : '' || kucing == 14 ? 'Level 14' : '' || kucing == 15 ? 'Level 15' : '' || kucing == 16 ? 'Level 16' : '' || kucing == 17 ? 'Level 17' : '' || kucing == 18 ? 'Level 18' : '' || kucing == 19 ? 'Level 19' : '' || kucing == 20 ? 'Level 20 MAX' : ''}*
+🦊Rubah : *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level 5' : '' || rubah == 6 ? 'Level 6' : '' || rubah == 7 ? 'Level 7' : '' || rubah == 8 ? 'Level 8' : '' || rubah == 9 ? 'Level 9' : '' || rubah == 10 ? 'Level 10' : '' || rubah == 11 ? 'Level 11' : '' || rubah == 12 ? 'Level 12' : '' || rubah == 13 ? 'Level 13' : '' || rubah == 14 ? 'Level 14' : '' || rubah == 15 ? 'Level 15' : '' || rubah == 16 ? 'Level 16' : '' || rubah == 17 ? 'Level 17' : '' || rubah == 18 ? 'Level 18' : '' || rubah == 19 ? 'Level 19' : '' || rubah == 20 ? 'Level 20 MAX' : ''}*
+🐎Kuda : *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level 5' : '' || kuda == 6 ? 'Level 6' : '' || kuda == 7 ? 'Level 7' : '' || kuda == 8 ? 'Level 8' : '' || kuda == 9 ? 'Level 9' : '' || kuda == 10 ? 'Level 10' : '' || kuda == 11 ? 'Level 11' : '' || kuda == 12 ? 'Level 12' : '' || kuda == 13 ? 'Level 13' : '' || kuda == 14 ? 'Level 14' : '' || kuda == 15 ? 'Level 15' : '' || kuda == 16 ? 'Level 16' : '' || kuda == 17 ? 'Level 17' : '' || kuda == 18 ? 'Level 18' : '' || kuda == 19 ? 'Level 19' : '' || kuda == 20 ? 'Level 20 MAX' : ''}*\n\n
+*Progress*\n
 ╭────────────────
 │🧬Level *${level}* To Level *${level}*
 │📈Exp *${exp}* -> *${max}*
@@ -111,8 +110,8 @@ ${readMore}
 8.Top Legendary *${userslegendary.indexOf(who) + 1}* dari *${userslegendary.length}*
 9.Top Sampah *${userssampah.indexOf(who) + 1}* dari *${userssampah.length}*
 \n${readMore}\n
-Warn: *${warn}*
-Banned: *No*
+Warn : *${warn}*
+Banned : *No*
 `.trim()
     conn.send2Button(m.chat, str, footer, 'PROFILE', '.profile', 'SHOP', '#shop', m, { contextInfo: { forwardingScore: 999, isForwarded: true }})
 
