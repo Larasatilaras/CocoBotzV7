@@ -31,8 +31,8 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/saipulanuar/v18
-cd v18
+git clone https://github.com/iCocopie/CocoBotzV7
+cd CocoBotzV7
 npm install
 npm update
 ```
