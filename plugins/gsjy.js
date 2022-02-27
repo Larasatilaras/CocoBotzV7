@@ -13,7 +13,7 @@ ${ucapan()} *%name* 😊
 🎀 Hari : *%week %weton* 
 🗓️ Tanggal Masehi : *%date*
 📆 Tanggal Hijriyah : *%dateIslamic*
-⏲ Jam *%time WIB*
+⏲ Server Time : *%time*
 
 ❏ 👤 *USER INFO*
 🪀 WhatsApp Version : 2.21.24.22
@@ -28,8 +28,8 @@ ${ucapan()} *%name* 😊
 💻 Platform : Linux
 🌏 Browser : Chrome
 🌐 Server : Baileys
-⏰ Uptime: *%uptime (%muptime)*
-📥 Database: *%rtotalreg* Of *%totalreg*
+⏰ Uptime : *%uptime (%muptime)*
+📥 Database : *%rtotalreg* Of *%totalreg*
 `.trimStart(),
   header: '〔 *%category* 〕',
   body: '• %cmd %islimit %isPremium',
