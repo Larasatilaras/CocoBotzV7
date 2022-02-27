@@ -202,8 +202,8 @@ module.exports = {
           if (!('antiBadword' in chat)) chat.antiBadword = false
           if (!('rpg' in chat)) chat.delete = true
           if (!('nsfw' in chat)) chat.delete = false
-          if (!('antiLink' in chat)) chat.antiLink = false
-          if (!('viewonce' in chat)) chat.viewonce = true
+          if (!('antiLink' in chat)) chat.antiLink = true
+          if (!('viewonce' in chat)) chat.viewonce = false
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
           welcome: true,
@@ -218,7 +218,7 @@ module.exports = {
           nsfw: false,
           antiBadword: false,
           antiLink: true,
-          viewonce: true,
+          viewonce: false,
         }
         
                 let settings = global.db.data.settings[this.user.jid]
@@ -571,7 +571,7 @@ global.dfail = (type, m, conn) => {
   let msg = {
     rowner: `❌Command Rejected❌\n\nSilahkan Hubungi @${global.kontak[0].split`@`[0]}`,
     owner: `❌⚠️Command Rejected⚠️❌\n\nSilahkan Hubungi @${global.kontak[0].split`@`[0]}`,
-    mods: `❌Perintah ditolak❌\n\nSilahkan hubungi @${global.kontak[0].split`@`[0]}`,
+    mods: `❌Perintah Ditolak❌\n\nSilahkan Hubungi @${global.kontak[0].split`@`[0]}`,
     premium: '❌Perintah Ini Khusus User _*Premium*_ !',
     group: 'Perintah ini hanya dapat digunakan di grup!',
     private: '❌Command Rejected❌\n\nGunakan Perintah Ini Di Chat Pribadi Bot',
