@@ -16,11 +16,11 @@ ${ucapan()} *%name* 😊
 ⏲ Server Time : *%time*
 
 ❏ 👤 *USER INFO*
-🪀 WhatsApp Version : 2.21.24.22
+🪀 WhatsApp Version : *2.21.24.22*
 🎁 Limit : *%limit*
 🏷 Role : *%role*
 🗞 Level : *%level* 
-🚀 Total XP : %totalexp
+🚀 Total XP : *%totalexp*
 
 ❏ 🤖️ *BOT INFO*
 🪄 Mode : Multi Mode
@@ -238,7 +238,15 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ada Yang Error Silahkan Hubungi Owner 👌`.trim(),
+❏ 🤖️ *BOT INFO*
+🤾‍♂️ Bot Name : *CocoBotz V7*
+🧾 Mode : Multi Mode
+⁉️ Prefix : Multi Prefix
+🪀 WhatsApp Version : 2.21.24.20
+💻 Platform : Linux
+🌏 Browser : Chrome
+🌐 Server : Baileys
+📥 Database : *Lib 4.0.0*`.trim(),
           "buttonText": "📚 List Menu",
           "listType": "SINGLE_SELECT",
           "sections": [
