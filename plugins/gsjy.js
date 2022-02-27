@@ -246,7 +246,7 @@ Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ad
               "rows": [
                 {
                   "title": `[🧾] Semua Perintah`,
-                  "description": "Memberikan Semua Fitur Bot",
+                  "description": "Memberikan Semua Command Bot",
                   "rowId": ".? all"
                 }, {
                   "title": "[🕋] Islam",
@@ -459,7 +459,7 @@ Silahkan Pilih Menu Dibawah\n_*Bot Ini Masih Dalam Tahap Pengembangan*_\nJika Ad
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, '🎒 Inventory', '.inv', '📇 Profile', '.profile', '🚫 Rules', '.infobot', m)
+    await conn.sendButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, '👤 OWNER', '.owner', m)
     // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
