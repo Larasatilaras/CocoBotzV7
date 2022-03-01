@@ -32,7 +32,7 @@ module.exports = {
             if (!isNumber(user.title)) user.title = ''
             if (!isNumber(user.limit)) user.limit = 50
             if (!isNumber(user.lastclaim)) user.lastclaim = 0
-            if (!isNumber(user.money)) user.money = 0
+            if (!isNumber(user.money)) user.money = 100000
             
             if (!isNumber(user.diamond)) user.diamond = 0
             if (!isNumber(user.iron)) user.iron = 0
@@ -109,7 +109,7 @@ module.exports = {
                 if (!isNumber(user.serial)) user.serial
                 if (!isNumber(user.regTime)) user.regTime = -1
             }
-            if (!('autolevelup' in user)) user.autolevelup = true
+            if (!('autolevelup' in user)) user.autolevelup = false
             if (!('lastIstigfar' in user)) user.lastIstigfar = true
         } else global.db.data.users[m.sender] = {
             healt: 1000,
@@ -118,7 +118,7 @@ module.exports = {
             exp: 0,
             limit: 50,
             lastclaim: 0,
-            money: 0,
+            money: 100000,
             diamond: 0,
             iron: 0,
             common: 0,
@@ -520,9 +520,9 @@ module.exports = {
         }
         break
       case 'promote':
-        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Is Now As Admin```')
+        text = (chat.sPromote || this.spromote || conn.spromote || '*「 Auto Detect 」*\n@user ```Is Now Admin```')
       case 'demote':
-        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Is No Longer As Admin```')
+        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '*「 Auto Detect 」*\n@user ```Is No Longer As Admin```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         if (chat.detect) this.sendMessage(jid, text, MessageType.extendedText, {
           contextInfo: {
