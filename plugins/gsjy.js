@@ -185,7 +185,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let names = m.fromMe ? conn.user : conn.contacts[who]
     let pushname = `${names.vnmae || names.notify || names.names || ('+' + names.jid.split`@`[0])}`
-    let pushn = '_-Daftar Dulu Ya Kak Supaya Namanya Muncul Disini :3-_'
+    let pushn = '_*Daftar Dulu Ya Kak Supaya Namanya Muncul Disini :3*_'
     let name = registered ? global.db.data.users[m.sender].name : pushn
     let d = new Date(new Date + 3600000)
     let locale = 'id'
@@ -238,16 +238,18 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-❏ 🤖️ *BOT INFO*
+❏ *BOT INFO*
 🤾‍♂️ Bot Name : *CocoBotz V7*
-🧾 Mode : Multi Mode
-⁉️ Prefix : Multi Prefix
-🪀 WhatsApp Version : 2.21.24.20
-💻 Platform : Linux
-🌏 Browser : Chrome
-🌐 Server : Baileys
-📥 Database : *Lib 4.0.0*`.trim(),
-          "buttonText": "📚 List Menu",
+🧾 Mode : *Multi Mode*
+⁉️ Prefix : *Multi Prefix*
+🪀 WhatsApp Version : *2.21.24.20*
+💻 Platform : *Linux*
+🌏 Browser : *Chrome*
+🌐 Server : *Baileys*
+📥 Database : *Lib 4.0.0*
+
+©Cocopie || 2022`.trim(),
+          "buttonText": "📚 CLICK HERE",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
