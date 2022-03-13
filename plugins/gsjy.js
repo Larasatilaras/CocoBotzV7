@@ -23,11 +23,12 @@ ${ucapan()} *%name* 😊
 🚀 Total XP : *%totalexp*
 
 ❏ 🤖️ *BOT INFO*
-🪄 Mode : Multi Mode
-🧭 Prefix : Multi Prefix
-💻 Platform : Linux
-🌏 Browser : Chrome
-🌐 Server : Baileys
+🤾‍♂️ Bot Name : *CocoBotz*
+🧾 Mode : *Public Mode*
+⁉️ Prefix : *Multi Prefix*
+💻 Platform : *Linux*
+🌏 Browser : *Chrome*
+🌐 Server : *Baileys*
 ⏰ Uptime : *%uptime (%muptime)*
 📥 Database : *%rtotalreg* Of *%totalreg*
 `.trimStart(),
