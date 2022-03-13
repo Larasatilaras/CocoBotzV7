@@ -36,7 +36,7 @@ ${ucapan()} *%name* 😊
   body: '• %cmd %islimit %isPremium',
   footer: '\n',
   after: `
-*CocoBotz V8*
+*CocoBotz V7*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
