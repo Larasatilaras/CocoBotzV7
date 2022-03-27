@@ -16,11 +16,11 @@
 gc1 = ''
 gc2 = ''
 gc3 = ''
-global.linkGC = ['https://chat.whatsapp.com/HJzf8CNphXrEtJaTpNY692', ''] // ganti jadi group lu
-global.owner = ['628992029499'] // Put your number here //owner eval
-global.kontak = ['628992029499','0'] //Ketika ada yang ngetik #owner
-global.mods = ['6283116629498'] // Want some help?
-global.prems = ['628992029499','6283116629498'] // Premium user has unlimited limit
+global.linkGC = ['https://chat.whatsapp.com/I3uvRkj0vGF0yexwy1OnUv', ''] // ganti jadi group lu
+global.owner = ['6285759662798'] // Put your number here //owner eval
+global.kontak = ['6285759662798','0'] //Ketika ada yang ngetik #owner
+global.mods = ['6285759662798'] // Want some help?
+global.prems = ['6285759662798','6283116629498'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com', 
@@ -55,23 +55,23 @@ leyskey = 'dappakntlll'
 bearkey = 'buy'
 
 //xteam        MIMINETBOT
-namaig = 'https://instagram.com/ryuuu.rs'
-namagithub = 'https://github.com/iCocopie'
+namaig = 'https://instagram.com/itzmelaras_'
+namagithub = 'https://github.com/Larasatilaras'
 kasihcaption = `Ini Kak :)`
-namakontak1 = 'Cocopie'
-namakontak2 = 'Cocopie'
+namakontak1 = 'Lαrαschαnn'
+namakontak2 = 'Lαrαschαnn'
 
 //kasihcaption = `Nih Kak`
 
 // Sticker WM
-global.packname = 'CocoBotz Created By' // ganti aja
-global.author = 'Cocopie' // ganti aja
+global.packname = 'R α s z Ᏼo͢Ꭲ✿ Created By Lαrαschαnn' // ganti aja
+global.author = 'Lαrαschαnn' // ganti aja
 
 //yyy
-bc = 'CocoBotz Broadcast' //King Of Bear Broadcast
+bc = 'R α s z Ᏼo͢Ꭲ✿ Broadcast' //King Of Bear Broadcast
 footer = '\n©Cocopie || 2022'
-namabot = 'CocoBotz'
-namalu = 'Cocopie'
+namabot = 'R α s z Ᏼo͢Ꭲ✿'
+namalu = 'LαrαsChαnn'
 
 
 // 
